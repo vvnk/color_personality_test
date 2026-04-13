@@ -35,3 +35,7 @@ if (top === R) {
     result = "You are mostly Blue!";
     desc = "Wow you are so blue";
 } 
+
+// Set the results in localStorage (so they can be accessed on the results page)
+localStorage.setItem("result", result);
+localStorage.setItem("description", desc);
