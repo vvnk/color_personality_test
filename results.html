@@ -8,6 +8,10 @@
     <body>
         <h1>Your results!</h1>
         <p id="result"></p>
-        <script src="main.js"></script>
+        <p id="description"></p>
+        <script>
+            document.getElementById("result").innerText = localStorage.getItem("result");
+            document.getElementById("desc").innerText = localStorage.getItem("desc");
+        </script>
     </body>
 </html> 
