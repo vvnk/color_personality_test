@@ -6,6 +6,7 @@
     </head>
 
     <body>
+        <!-- Get the results from localStorage and display -->
         <h1>Your results:</h1>
         <h1 id="result"></h1>
         <h4 id="desc"></h4>
@@ -13,5 +14,18 @@
             document.getElementById("result").innerText = localStorage.getItem("result");
             document.getElementById("desc").innerText = localStorage.getItem("desc");
         </script>
+
+        <!-- Confetti time!! -->
+        <script type="module">
+            import confetti from "https://cdn.skypack.dev/canvas-confetti";
+            window.confetti = function() {
+                confetti({
+                    particleCount: 67, // hehe
+                    spread: 100,
+                    origin: {y: 0.67}
+                });
+            };
+        </script>
+        <button onclick="confetti()">Yayay!!</button>
     </body>
 </html> 

@@ -1,5 +1,6 @@
 // Tracking the user's answers to the quiz questions
 let answers = {q1: null, q2: null, q3: null, q4: null, q5: null, q6: null, q7: null, q8: null, q9: null, q10: null, q11: null, q12: null, q13: null};
+let all_answered = false;
 
 // Track the user's answers and update the counters
 function counter(question, choice) {
@@ -42,3 +43,14 @@ function counter(question, choice) {
     localStorage.setItem("desc", desc);
 }
 
+
+function submit() {
+    for (let answer in answers) {
+        if (answers[answer] === null) {
+            alert("Please answer all questions before submitting!!");
+            return;
+        }
+    }
+    // If they answered all questions, gp to the results page
+    window.location.href = "results.html";
+}
