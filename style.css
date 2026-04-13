@@ -1,5 +1,13 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url("bg.jpg");
+    min-height: 100vh;
+    overflow-x: hidden;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
