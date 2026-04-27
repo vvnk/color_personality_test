@@ -22,10 +22,13 @@ body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     background-image: linear-gradient(rgb(214, 8, 8), rgb(231, 200, 25), rgb(28, 148, 10), rgb(10, 10, 148));
     color: transparent;
@@ -43,10 +46,13 @@ a, button {
     box-shadow: 3px 3px 5px 1px rgb(11, 131, 57);
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 10px;
+    margin: 10px 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-button:hover {
+a:hover, button:hover {
   background-color: #217a24;
   color: white;
 }
