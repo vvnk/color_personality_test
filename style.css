@@ -37,7 +37,8 @@ h1 {
 
 a, button {
     background-color: white;
-    padding: 5px 10px;
+    padding: 10px 10px;
+    font-size: 16px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -46,10 +47,11 @@ a, button {
     box-shadow: 3px 3px 5px 1px rgb(11, 131, 57);
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 10px 500px;
+    margin: 20px 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 a:hover, button:hover {
