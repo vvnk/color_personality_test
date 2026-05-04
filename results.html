@@ -10,6 +10,8 @@
         <h1>Your results:</h1>
         <h1 id="result"></h1>
         <h4 id="desc"></h4>
+        <p id="output"></p>
+
         <script>
             document.getElementById("result").innerText = localStorage.getItem("result");
             document.getElementById("desc").innerText = localStorage.getItem("desc");
@@ -17,15 +19,15 @@
         </script>
 
         <!-- Confetti time!! -->
-        <script type="module">
-            import confetti from "https://cdn.skypack.dev/canvas-confetti";
-            window.confetti = function() {
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+        <script>
+            function confetti() {
                 confetti({
-                    particleCount: 67, // hehe
-                    spread: 100,
-                    origin: {y: 0.67}
+                    particleCount: 100,
+                    spread: 70,
+                    origin: { y: 0.67 } // hehe
                 });
-            };
+            }
         </script>
         <button onclick="confetti()">Yayay!!</button>
     </body>
