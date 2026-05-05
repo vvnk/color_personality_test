@@ -19,18 +19,17 @@
             document.getElementById("output").innerText = localStorage.getItem("output");
         </script>
 
-        <!-- Confetti time!! -->
-        <script type="module">
-            import confetti from "https://cdn.skypack.dev/canvas-confetti";
-            
-            function boom() {
+        <script>
+            function runConfetti() {
                 confetti({
                     particleCount: 100,
-                    spread: 70,
-                    origin: { y: 0.67 } // hehe
+                    spread: 125,
+                    origin: { y: 0.67 } //hehe
                 });
             }
         </script>
-        <button onclick="confetti()">Yayay!!</button>
+
+        <button onclick="runConfetti()">Yayay!!</button>
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     </body>
 </html> 
