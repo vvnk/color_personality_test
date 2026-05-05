@@ -14,7 +14,6 @@ function counter(question, choice) {
         else if (answers[color] === 'G') G++;
         else if (answers[color] === 'B') B++;
     }
-    console.log("function ran");
 
     document.getElementById("output").innerText =
     "R: " + R + " Y: " + Y + " G: " + G + " B: " + B;
@@ -29,13 +28,13 @@ function counter(question, choice) {
         desc = "You are a natural leader, confident, and driven. You thrive in competitive environments and are not afraid to take risks. You can be assertive and direct, but also have a strong sense of loyalty to those you care about.";
     } else if (top === Y) {
         result = "You are mostly Yellow!";
-        desc = "You are a very happy person!";
+        desc = "You have a social and influential personality! You are outgoing, enthusiastic, and love being around people. You have a natural charisma that draws others to you, and you enjoy being the center of attention. You are optimistic and have a positive outlook on life.";
     } else if (top === G) {
-        result = "You are mostly Green!";
+        result = "You are a stable and reliable person. You are a good listener and are always there for your friends when they need you. You are patient and understanding, and you have a strong sense of empathy. You value harmony and stability in your relationships, and you are often the peacekeeper in your social circle.";
         desc = "You are a green green bean!";
     } else if (top === B) {
         result = "You are mostly Blue!";
-        desc = "Wow you are so blue";
+        desc = "You are analytical and detail-oriented. You have a strong sense of logic and are often the voice of reason in your social circle. You are organized and methodical, and you take pride in doing things the right way. You can be perfectionistic at times, but you also have a deep appreciation for beauty and aesthetics.";
     } 
 
     // Set the results in localStorage (so they can be accessed on the results page)
@@ -54,3 +53,20 @@ function submit() {
     // If they answered all questions, gp to the results page
     window.location.href = "results.html";
 }
+
+<script>
+  window.addEventListener('load', () => {
+    (function () {
+      const runConfetti = document.querySelector('#hs-run-on-click-run-confetti');
+      runConfetti.addEventListener('click', () => {
+        confetti({
+          particleCount: 100,
+          spread: 70,
+          origin: {
+            y: 0.6
+          }
+        });
+      });
+    })();
+  });
+</script>

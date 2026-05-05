@@ -3,9 +3,10 @@
 <html>
     <head>
         <title>Color Type Quiz!!</title>
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <body>
+    <body class = "center">
         <!-- Get the results from localStorage and display -->
         <h1>Your results:</h1>
         <h1 id="result"></h1>
@@ -19,9 +20,10 @@
         </script>
 
         <!-- Confetti time!! -->
-        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
-        <script>
-            function confetti() {
+        <script type="module">
+            import confetti from "https://cdn.skypack.dev/canvas-confetti";
+            
+            function boom() {
                 confetti({
                     particleCount: 100,
                     spread: 70,
