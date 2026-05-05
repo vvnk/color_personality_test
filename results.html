@@ -11,14 +11,12 @@
         <h1>Your results:</h1>
         <h1 id="result"></h1>
         <h4 id="desc"></h4>
-        <p id="output"></p>
-
+  
         <script>
             document.getElementById("result").innerText = localStorage.getItem("result");
             document.getElementById("desc").innerText = localStorage.getItem("desc");
-            document.getElementById("output").innerText = localStorage.getItem("output");
         </script>
-
+        
         <script>
             function runConfetti() {
                 confetti({
