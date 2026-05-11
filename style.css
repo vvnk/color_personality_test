@@ -72,11 +72,12 @@ a, button {
     box-shadow: 3px 3px 5px 1px rgb(10, 13, 100);
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 20px 500px;
+    margin: 20px 0 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 a:hover, button:hover {
@@ -136,4 +137,8 @@ h3 {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.footer {
+    height: 10px;
 }

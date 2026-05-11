@@ -11,11 +11,6 @@
         <h1>Your results:</h1>
         <h1 id="result"></h1>
         <h4 id="desc"></h4>
-  
-        <script>
-            document.getElementById("result").innerText = localStorage.getItem("result");
-            document.getElementById("desc").innerText = localStorage.getItem("desc");
-        </script>
         
         <script>
             function runConfetti() {
@@ -29,5 +24,13 @@
 
         <button onclick="runConfetti()">Yayay!!</button>
         <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+        <script>
+            document.getElementById("result").innerText = localStorage.getItem("result");
+            document.getElementById("desc").innerText = localStorage.getItem("desc");
+        </script>
+        <script>
+            console.log(localStorage.getItem("result"));
+            console.log(localStorage.getItem("desc"));
+        </script>
     </body>
 </html> 

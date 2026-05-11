@@ -15,8 +15,7 @@ function counter(question, choice) {
         else if (answers[color] === 'B') B++;
     }
 
-    document.getElementById("output").innerText =
-    "R: " + R + " Y: " + Y + " G: " + G + " B: " + B;
+    document.getElementById("output").innerText = "R: " + R + " Y: " + Y + " G: " + G + " B: " + B;
 
     // Determine the user's results based on their highest color choices
     let top = Math.max(R, Y, G, B);
