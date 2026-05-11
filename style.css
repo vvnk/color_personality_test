@@ -142,3 +142,7 @@ h3 {
 .footer {
     height: 10px;
 }
+
+#output {
+    display: none;
+}
