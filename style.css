@@ -57,7 +57,7 @@ h4 {
 hr {
     width: 50%;
     border: 1px solid black;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 a, button {
@@ -72,7 +72,7 @@ a, button {
     box-shadow: 3px 3px 5px 1px rgb(10, 13, 100);
     cursor: pointer;
     transition-duration: 0.4s;
-    margin: 20px 0 60px 0;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,6 +127,10 @@ h3 {
     color: rgb(15, 96, 15);
 }
 
+h1, h2, h3, h4, p {
+    margin: 10px 0;
+}
+
 .option:has(input[type="radio"]:checked) {
     background: #26651b;
     color: white;
@@ -140,9 +144,24 @@ h3 {
 }
 
 .footer {
-    height: 10px;
+    height: 15px;
 }
 
 #output {
     display: none;
 }
+
+#result {
+    font-size: 30px;
+    color: black;
+    font-style: italic;
+}
+
+#desc {
+    font-size: 20px;
+    color: black;
+    font-weight: lighter;
+    margin: 20px 200px;
+    font-style: oblique;
+}
+

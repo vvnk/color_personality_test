@@ -29,8 +29,8 @@ function counter(question, choice) {
         result = "You are mostly Yellow!";
         desc = "You have a social and influential personality! You are outgoing, enthusiastic, and love being around people. You have a natural charisma that draws others to you, and you enjoy being the center of attention. You are optimistic and have a positive outlook on life.";
     } else if (top === G) {
-        result = "You are a stable and reliable person. You are a good listener and are always there for your friends when they need you. You are patient and understanding, and you have a strong sense of empathy. You value harmony and stability in your relationships, and you are often the peacekeeper in your social circle.";
-        desc = "You are a green green bean!";
+        result = "You are mostly Green!";
+        desc = "You are a stable and reliable person. You are a good listener and are always there for your friends when they need you. You are patient and understanding, and you have a strong sense of empathy. You value harmony and stability in your relationships, and you are often the peacekeeper in your social circle.";
     } else if (top === B) {
         result = "You are mostly Blue!";
         desc = "You are analytical and detail-oriented. You have a strong sense of logic and are often the voice of reason in your social circle. You are organized and methodical, and you take pride in doing things the right way. You can be perfectionistic at times, but you also have a deep appreciation for beauty and aesthetics.";

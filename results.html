@@ -14,10 +14,27 @@
         
         <script>
             function runConfetti() {
+                let result = localStorage.getItem("result");
+                let colors = [];    
+
+                if (result.includes("Red")) {
+                    colors = ["#DC143C", "#8B0000", "#FA8072", "#e60000"];
+                }
+                else if (result.includes("Yellow")) {
+                    colors = ["#ffff00", "#DAA520", "#FFD700", "#FFDF00"];
+                }
+                else if (result.includes("Green")) {
+                    colors = ["#006400", "#008000", "#32CD32", "#00e600"];
+                }
+                else if (result.includes("Blue")) {
+                    colors = ["#0000ff", "#0000CD", "#000080", "#1E90FF"];
+                }
+
                 confetti({
                     particleCount: 100,
                     spread: 125,
-                    origin: { y: 0.67 } //hehe
+                    origin: { y: 0.67 }, //hehe
+                    colors: colors
                 });
             }
         </script>
@@ -31,6 +48,25 @@
         <script>
             console.log(localStorage.getItem("result"));
             console.log(localStorage.getItem("desc"));
+        </script>
+        <script>
+            let results = localStorage.getItem("result");
+
+            document.getElementById("result").innerText = results;
+            document.getElementById("desc").innerText = localStorage.getItem("desc");
+
+            if (results.includes("Red")) {
+                document.getElementById("result").style.color = "red";
+            }
+            else if (results.includes("Yellow")) {
+                document.getElementById("result").style.color = "gold";
+            }
+            else if (results.includes("Green")) {
+                document.getElementById("result").style.color = "green";
+            }
+            else if (results.includes("Blue")) {
+                document.getElementById("result").style.color = "blue";
+            }
         </script>
     </body>
 </html> 
